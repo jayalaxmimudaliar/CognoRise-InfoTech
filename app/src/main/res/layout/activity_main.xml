@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+   android:background="#0A064E"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#769FCA"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="BMI Calculator"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weight"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+
+                android:background="@drawable/border"
+                android:hint="Enter weight in Kg"
+                android:textColor="@color/black"
+                android:textColorHint="#656363" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/height"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/border"
+                android:hint="Enter height in Meters"
+                android:textColor="@color/black"
+                android:textColorHint="#656363" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/calc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#1F3071"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:textSize="25dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI :"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/bmi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+           android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result :"
+
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/bmi_str"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:padding="10dp"
+
+                android:textColor="@color/black"
+
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
